@@ -1,0 +1,125 @@
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+figure,
+img,
+video {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+html {
+  background: #8e3fff;
+}
+
+body {
+  color: #fff;
+  font: 300 1.25rem -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+main {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40pt;
+  text-align: left;
+  line-height: 1;
+  font-weight: 900;
+  margin: 2rem auto;
+  max-width: 80%;
+  @media only screen and (min-width: 700px) {
+  font-size: 80pt;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 120pt;
+    max-width: 50%;
+  }
+}
+
+.boxes {
+  max-width: 80%;
+  @media only screen and (min-width: 1200px) {
+    max-width: 50%;
+  }
+}
+
+p {
+  letter-spacing: 0.06rem;
+  margin: 2rem auto;
+  text-align: left;
+  max-width: 80%;
+  line-height: 1.3;
+  @media only screen and (min-width: 1200px) {
+    max-width: 50%;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 2px 4px;
+    background: rgba(0,0,0,0.3);
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
